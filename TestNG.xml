@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="4">
+<parameter name="baseUrl" value="https://www.flipkart.com/" />
+
+<!--
+<test name="FireFoxTest">
+&lt;!&ndash; Test Level Parameters &ndash;&gt;
+<parameter name="browser" value="firefox" />
+<classes>
+    <class name="ToVerify"/>
+</classes>
+</test>
+-->
+
+<test name="ChromeTest">
+<!-- Test Level Parameters -->
+<parameter name="browser" value="chrome" />
+<classes>
+    <class name="tests.Automation"/>
+</classes>
+</test>
+
+<!--<test name="IETest">-->
+<!-- Test Level Parameters -->
+<!--<parameter name="browser" value="ie" />-->
+<!--<classes>
+    <class name="com.eternussolutions.AdditionTest"/>
+</classes>
+</test>-->
+</suite> <!-- Suite -->
