@@ -66,7 +66,11 @@ public class JsonArrayPrint {
             for (Object obj : studentsArray) {
                 JSONObject studentObject = (JSONObject) obj;
                 String name = (String) studentObject.get("name");
+                int score = (int) studentObject.get("score");
+               // int[] marks = (int[]) studentObject.get("marks");
+
                 System.out.println("Name: " + name);
+                System.out.println("score: " + score);
             }
         } catch (ParseException e) {
             e.printStackTrace();
